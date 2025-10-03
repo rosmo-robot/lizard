@@ -193,3 +193,4 @@ esp_err_t update_motor_disconnect_status() {
 
     return ESP_OK;
 }
+
