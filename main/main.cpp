@@ -409,6 +409,12 @@ void app_main() {
         exit(1);
     }
 
+      try {
+        Global::add_module("r4", std::make_shared<R4>());   // <-- register R4 module
+    } catch (const std::runtime_error &e) {
+        echo("error while initializing r4 module: %s", e.what());
+        exit(1);
+    }
     try {
         Storage::init();
         process_lizard(Storage::startup.c_str());
