@@ -31,6 +31,7 @@
 #include <string.h>
 #include <string>
 #include <vector>
+#include "modules/r4.h"
 
 #define BUFFER_SIZE 1024
 
